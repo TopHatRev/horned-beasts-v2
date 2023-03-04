@@ -2,6 +2,7 @@ import HornedBeast from "./HornedBeast";
 
 export default function Main({ data, handleModal, hornsFilter }) {
   const filteredData = data.filter(
+    // eslint-disable-next-line eqeqeq
     (beast) => !hornsFilter || beast.horns == hornsFilter
   );
 
